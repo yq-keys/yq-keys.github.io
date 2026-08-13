@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit Yadav | Software Developer Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #004F90; /* Matches your resume's blue */
+            --bg-color: #f8f9fa;
+            --text-main: #333;
+            --text-light: #666;
+            --white: #ffffff;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
+
+        /* Container & Sections */
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+        section { padding: 80px 0; border-bottom: 1px solid #eaeaea; }
+        h2 { font-size: 2rem; color: var(--primary); margin-bottom: 30px; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Hero Section */
+        .hero { text-align: center; padding: 120px 0 80px; background-color: var(--white); }
+        .hero h1 { font-size: 3.5rem; color: var(--text-main); margin-bottom: 10px; }
+        .hero h3 { font-size: 1.5rem; color: var(--text-light); font-weight: 400; margin-bottom: 20px; }
+        .social-links a { color: var(--primary); font-size: 1.5rem; margin: 0 10px; transition: color 0.3s; }
+        .social-links a:hover { color: #003366; }
+
+        /* Skills */
+        .skills-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+        .skill-tag { background: var(--primary); color: var(--white); padding: 8px 15px; border-radius: 20px; font-size: 0.9rem; font-weight: 600; }
+
+        /* Projects */
+        .project-card { background: var(--white); border-radius: 8px; padding: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 20px; transition: transform 0.3s; }
+        .project-card:hover { transform: translateY(-5px); }
+        .project-card h3 { color: var(--primary); margin-bottom: 10px; font-size: 1.5rem; }
+        .project-tech { font-size: 0.85rem; color: var(--text-light); margin-bottom: 15px; font-weight: bold; }
+
+        /* Experience / Leadership */
+        .timeline-item { margin-bottom: 30px; padding-left: 20px; border-left: 3px solid var(--primary); }
+        .timeline-item h4 { font-size: 1.2rem; color: var(--text-main); }
+        .timeline-date { font-size: 0.9rem; color: var(--primary); font-weight: bold; margin-bottom: 10px; }
+
+        /* Footer */
+        footer { text-align: center; padding: 30px; background: var(--white); color: var(--text-light); font-size: 0.9rem; }
+
+        /* Button */
+        .btn { display: inline-block; background: var(--primary); color: var(--white); padding: 10px 25px; text-decoration: none; border-radius: 5px; margin-top: 20px; transition: 0.3s; }
+        .btn:hover { background: #003366; }
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <h1>Mohit Yadav</h1>
+            <h3>CS Undergrad & Placement Representative @ IIEST Shibpur</h3>
+            <p style="max-width: 600px; margin: 0 auto 25px; color: var(--text-light);">
+                Software Engineering student passionate about building scalable, cross-platform applications using Flutter and Python. Bridging the gap between robust backend architectures and clean user interfaces.
+            </p>
+            <div class="social-links">
+                <a href="mailto:mohit.my.915@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/mohit-yadav-856757289/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/yq-keys" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">Flutter</span>
+                <span class="skill-tag">Dart</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">FastAPI</span>
+                <span class="skill-tag">C/C++</span>
+                <span class="skill-tag">Data Structures & Algorithms</span>
+                <span class="skill-tag">SQL / SQLite</span>
+                <span class="skill-tag">JavaScript / HTML / CSS</span>
+                <span class="skill-tag">Git & GitHub</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <div class="container">
+            <h2>Featured Work</h2>
+
+            <div class="project-card">
+                <h3>Cross-Platform Task Management System</h3>
+                <div class="project-tech">Flutter | Dart | FastAPI | SQLite | SQLAlchemy</div>
+                <p>Architected a responsive, cross-platform mobile application featuring real-time state updates and an intuitive Material 3 user interface.</p>
+                <ul style="margin-left: 20px; margin-top: 10px; color: var(--text-light);">
+                    <li>Engineered a scalable FastAPI backend with SQLAlchemy ORM.</li>
+                    <li>Integrated SQLite for local caching, ensuring seamless offline availability and optimized data synchronization.</li>
+                </ul>
+                <a href="https://github.com/yq-keys/cross-platform-task-sync" target="_blank" class="btn">View Source Code <i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEADERSHIP & EXPERIENCE SECTION -->
+    <section id="leadership" style="background-color: var(--white);">
+        <div class="container">
+            <h2>Leadership & Impact</h2>
+
+            <div class="timeline-item">
+                <h4>Placement Representative, CST Department</h4>
+                <div class="timeline-date">IIEST Shibpur | 2025 – Present</div>
+                <p>Acting as the primary liaison between the department and corporate recruiters, facilitating campus placement and internship drives.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h4>Secretary (Acting)</h4>
+                <div class="timeline-date">Academic Society of Computer Engineers (ASCE) | Sep 2025 – Present</div>
+                <p>Representing 500+ UG and PG members. Responsible for organizing, coordinating, and overseeing all academic and technical events conducted by ASCE.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h4>Senior Member & Mentor</h4>
+                <div class="timeline-date">Camerabuff (Film Society)</div>
+                <p>Mentored 100+ editors, conducted technical workshops, and supervised end-to-end video-editing pipelines.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS SECTION -->
+    <section id="achievements">
+        <div class="container">
+            <h2>Achievements</h2>
+            <ul style="margin-left: 20px; color: var(--text-main); font-size: 1.1rem; line-height: 1.8;">
+                <li>Solved <strong>300+ algorithmic problems</strong> across LeetCode and GeeksforGeeks, demonstrating strong problem-solving skills in DSA.</li>
+                <li>Selected for the <strong>Smart India Hackathon (College Round)</strong> among 120+ competing teams for an innovative tech solution.</li>
+                <li>Consistently placed in competitive coding contests and hackathons.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mohit Yadav. Built with code and coffee.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
